@@ -1,4 +1,5 @@
 from art import logo
+
 def add(n1, n2):
 	'''Returns the sum of the two args'''
 	return n1 + n2
@@ -15,6 +16,7 @@ def div(n1, n2):
 	'''Returns the quotient of the two args'''
 	return n1 / n2
 
+# map a symbol to a specific function
 operations = {
 	"+": add,
 	"-": sub,
@@ -34,6 +36,7 @@ def calculator():
 
 		op = input("What operation do you want to perform?\n")
 		num2 = float(input("Enter another number.\n"))
+		# operations[op] is the function the symbol mapped to. 
 		calc_function = operations[op]
 		answer = calc_function(num1, num2)
 
