@@ -2,7 +2,7 @@
 enemies = 1
 
 def increase_enemies():
-  # python will use local variables before it uses global variables
+  # python will use local variables
   # unless the global keyword is used to accesss the global variable
   # dont use gloabal unless need, document it
   global enemies
@@ -14,7 +14,7 @@ print(f"enemies outside function: {enemies}")
 
 # Globals accessible anywhere, local variables accessible in functions only
 
-# A function defined inside of another is only accessible inside that function.
+# A function defined inside of another is only accessible inside outer function.
 def game():
 	def drink_potion():
 		potion_strength = 2
@@ -27,9 +27,9 @@ game()
 # No block scope in python
 # conditional blocks do not create a scope, 
 # if enemies == 1:
-	# of a variable was create dhere it would be accessible globally
+	# if a variable was created here it would be accessible globally
 
-# global keyword workoaround
+# global keyword workaround
 puppies = 1
 def more_puppies():
 	return puppies + 1
