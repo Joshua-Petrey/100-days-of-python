@@ -38,6 +38,7 @@ while not should_continue:
 		score += 1
 		A = B
 		B = random.choice(data)
+		print(logo)
 		print("Correct")
 	else:
 		print(f"Wrong! Game Over final score: {score}")
