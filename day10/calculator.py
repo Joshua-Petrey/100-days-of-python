@@ -37,11 +37,13 @@ def calculator():
 		op = input("What operation do you want to perform?\n")
 		num2 = float(input("Enter another number.\n"))
 		# operations[op] is the function the symbol mapped to. 
+		# now calc_function is a function that takes inputs
 		calc_function = operations[op]
 		answer = calc_function(num1, num2)
 
+		# print answer of calculation
 		print(f"{num1} {op} {num2} = {answer}")
-		
+		# keep the answer to perform another operation on it?
 		if input(f"Type 'y' to keep calulating with {answer}, or 'n' to start new calculation ") == 'y':
 			num1 = answer
 		else:

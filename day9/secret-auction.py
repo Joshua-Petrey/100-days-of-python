@@ -13,9 +13,10 @@ logo = '''
 '''
 print(logo)
 
+# put each name and bid into the dictionary
 names_bids = {}
-finished = False
 
+#loop through dictionary to find the highest bidder and their bid
 def highest_bidder(bidders):
 	winning_bidder = ""
 	winning_bid = 0.0
@@ -25,13 +26,14 @@ def highest_bidder(bidders):
 			winning_bidder = x
 	return print(f"The winning bidder is {winning_bidder} with a bid of ${format(winning_bid, '.2f')}")
 
-while not finished:
+finished_bidding = False
+while not finished_bidding:
 	name = input("What is your name?\n")
 	bid = float(input("What is your bid\n"))
 	names_bids[name] = bid
 	rerun = input("Do you want to add another bid? y or n\n")
 	if rerun == "n":
-		finished = True
+		finished_bidding = True
 
 
 highest_bidder(names_bids)

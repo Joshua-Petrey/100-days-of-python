@@ -68,20 +68,23 @@ logo = '''
                     __/ |                      
                    |___/    '''
 
+# get a random word from api
 req = requests.get(
     'https://random-word-api.herokuapp.com/word?number=1').json()
+# the word the api returned
 word = req[0]
-print(word)
+
+# create the blanks 
 blank = []
 for x in word:
     blank += "_"
 
 print(logo)
 
-end = False
+end_of_game = False
 num_of_tries = 6
 
-while not end:
+while not end_of_game:
     guess = input("Guess a letter.").lower()
 
     if guess in blank:

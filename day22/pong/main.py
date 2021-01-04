@@ -20,7 +20,7 @@ pad_2 = Paddle(PADDLE_2_START)
 scoreboard = Scoreboard()
 ball = Ball()
 
-#
+# player controls
 screen.onkey(pad_1.up, "w")
 screen.onkey(pad_1.down, "s")
 screen.onkey(pad_2.up, "Up")

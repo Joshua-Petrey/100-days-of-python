@@ -2,7 +2,6 @@ def times():
 	result = 3 * 5
 	return result
 
-
 #Doc strings
 def formatName(fname, lname):
 	''' Take two strings: fname and lname. Outputs the the arguments as 

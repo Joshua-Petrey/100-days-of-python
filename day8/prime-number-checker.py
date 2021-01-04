@@ -1,5 +1,5 @@
+# Check if a number is Prime
 num = int(input("Number to check\n"))
-
 
 def prime_checker(number):
     if number > 1:

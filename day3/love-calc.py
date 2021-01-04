@@ -22,4 +22,4 @@ if final < 10 or final > 90:
 elif final >= 40 and final <= 50:
     print(f"Your score is {final}, you are alright together.")
 else:
-    print(f"Your score is {final}.")
+    print(f"Your score is {final}. Run away as fast as you can!")

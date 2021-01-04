@@ -11,7 +11,7 @@ screen.bgcolor("black")
 screen.tracer(0)
 screen.listen()
 
-# initialize
+# initialize player, scoreboards and cars
 leo = Player()
 level = Scoreboard()
 cars = CarMaker()

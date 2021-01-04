@@ -4,7 +4,7 @@ enemies = 1
 def increase_enemies():
   # python will use local variables
   # unless the global keyword is used to accesss the global variable
-  # dont use gloabal unless need, document it
+  # dont use global unless needed, document it
   global enemies
   enemies += 2
   print(f"enemies inside function: {enemies}")

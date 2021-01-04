@@ -12,12 +12,13 @@ def random_color():
 	b = random.randint(0,255)
 	return (r,g,b)
 
+# size is the radius, num_circles determines number of circles to be drawn
 def draw_spirograph(size, num_circles):
 	for _ in range(num_circles):
 		leo.circle(size)
 		leo.left(360 / num_circles)
 		leo.pencolor(random_color())
 
-draw_spirograph(150, 50)
+draw_spirograph(150, 200)
 
 screen.exitonclick()

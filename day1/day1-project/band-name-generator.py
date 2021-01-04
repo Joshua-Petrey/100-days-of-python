@@ -1,3 +1,4 @@
+# Generate a band name from the answers of two randomly chosen questions
 import random as r
 questions = ("What is your pet\'s name?",
              "What is your nickname?",
@@ -11,7 +12,7 @@ questions = ("What is your pet\'s name?",
              )
 
 print(r.choice(questions))
-part1 = input()
+answer1 = input().capitalize()
 print(r.choice(questions))
-part2 = input()
-print("Your band name could be" + "\n" + part1 + " " + part2)
+answer2 = input().capitalize()
+print("Your band name could be" + "\n" + answer1 + " " + answer2)

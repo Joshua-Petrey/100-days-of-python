@@ -17,6 +17,7 @@ def turn_right():
 	leo.right(5)
 screen.listen()
 
+# clear screen and return home
 def reset():
 	leo.clear()
 	leo.penup()
@@ -32,9 +33,6 @@ onkeypress(turn_left, "Left")
 onkeypress(turn_right, "Right")
 
 onkeypress(reset, "Delete")
-
-
-
 
 
 screen.exitonclick()

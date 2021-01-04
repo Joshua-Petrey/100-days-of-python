@@ -21,6 +21,7 @@ class Scoreboard(Turtle):
         self.clear()
         self.write(f"Score: {self.score} Highscore: {self.high_score}", align=ALIGNMENT, font=FONT)
 
+    # if highscore write it to file then reset the players score
     def reset(self):
         if self.score > self.high_score:
             self.high_score = self.score

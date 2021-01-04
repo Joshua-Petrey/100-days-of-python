@@ -24,6 +24,6 @@ def add_new_country(country_visited, number_of_visits, cities_visited_list):
         print(f"You have visited {country_visited} {number_of_visits} times")
     else:
         print(f"You have visited {country_visited} {number_of_visits} once")
-	print(travel_log[-1])
+        print(travel_log[-1])
 
 add_new_country('Russia', 3, ['lorain', 'lima', 'sandusky'])

@@ -1,3 +1,5 @@
+# calculate how many cans of paint are needed to cover a wall
+
 import math
 wall_height = float(input("How tall is the wall"))
 wall_width = float(input("How wide is the wall?"))

@@ -1,4 +1,5 @@
 # Life remaining in days, weeks, years
+# Assumes you will live til age 90
 age = int(input("What is your current age?"))
 yearsleft = 90 - age
 days = round( yearsleft * 365)

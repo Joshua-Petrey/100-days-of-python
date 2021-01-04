@@ -1,12 +1,14 @@
+# guess who has the most instagram followers (data is fake)
+
 from art import logo, vs
 from data import data
 import random
 
-print(logo)
 score = 0
+# choose two random people
 A = random.choice(data)
 B = random.choice(data)
-# Make sure B and A are not the same
+# Make sure B and A are not the same people
 while A == B:
 	B = random.choice(data)
 
@@ -36,6 +38,7 @@ while not should_continue:
 	guess = input("Who has the most followers? A or B\n")
 	if compare_followers(A,B) == is_user_correct(guess):
 		score += 1
+		#make person B the new pesron A, then randomly draw a new person B
 		A = B
 		B = random.choice(data)
 		print(logo)

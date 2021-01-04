@@ -1,3 +1,5 @@
+# loop through the dictionary to print how they are doing school based on the key's value
+
 student_scores = {
 	"Harry": 81,
   	"Ron": 78,

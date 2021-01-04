@@ -41,7 +41,7 @@ def on():
     def turn_off():
         quit()
 
-    # Todo 1. Use a for loop to check
+    # check if the machine has enough of each resource to make the coffee
     def have_enough_resos(type_of_coffee, resos):
         if resos['water'] < MENU[type_of_coffee]['ingredients']['water']:
             return False
@@ -58,7 +58,6 @@ def on():
         else:
             return True
 
-    # TODO use for loop
     def recalc_reso(resos, coffee_type):
         resos['water'] -= MENU[coffee_type]['ingredients']['water']
         resos['milk'] -= MENU[coffee_type]['ingredients']['milk']
