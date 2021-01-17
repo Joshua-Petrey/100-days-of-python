@@ -1,4 +1,4 @@
-numbers = [1,2,3,4,5,6,7]
+numbers = [1, 2, 3, 4, 5, 6, 7]
 [print(x**2) for x in numbers]
 
 # create an array of squared numbers
@@ -22,6 +22,6 @@ print(letters_in_name)
 newlist = [letter if letter != "J" else "H" for letter in name]
 print(newlist)
 
-# 1,2,3,4 
-rangelist = [num for num in range(1,5)]
+# 1,2,3,4
+rangelist = [num for num in range(1, 5)]
 print(rangelist)
